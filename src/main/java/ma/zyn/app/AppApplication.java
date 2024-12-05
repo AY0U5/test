@@ -105,19 +105,16 @@ public class AppApplication {
 
     private void createReferentielFamilleExigence(){
             ReferentielFamilleExigence itemSuccess = new ReferentielFamilleExigence();
-            itemSuccess.setId(1L);
             itemSuccess.setStyle("success");
             itemSuccess.setLibelle("Validated");
             itemSuccess.setCode("Validated");
             referentielFamilleExigenceService.create(itemSuccess);
             ReferentielFamilleExigence itemDanger = new ReferentielFamilleExigence();
-            itemDanger.setId(2L);
             itemDanger.setStyle("danger");
             itemDanger.setLibelle("Blocked");
             itemDanger.setCode("Blocked");
             referentielFamilleExigenceService.create(itemDanger);
             ReferentielFamilleExigence itemWarning = new ReferentielFamilleExigence();
-            itemWarning.setId(3L);
             itemWarning.setStyle("warning");
             itemWarning.setLibelle("Pending");
             itemWarning.setCode("Pending");
@@ -126,19 +123,16 @@ public class AppApplication {
     }
     private void createFamilleExigence(){
             FamilleExigence itemSuccess = new FamilleExigence();
-            itemSuccess.setId(1L);
             itemSuccess.setStyle("success");
             itemSuccess.setLibelle("Validated");
             itemSuccess.setCode("Validated");
             familleExigenceService.create(itemSuccess);
             FamilleExigence itemDanger = new FamilleExigence();
-            itemDanger.setId(2L);
             itemDanger.setStyle("danger");
             itemDanger.setLibelle("Blocked");
             itemDanger.setCode("Blocked");
             familleExigenceService.create(itemDanger);
             FamilleExigence itemWarning = new FamilleExigence();
-            itemWarning.setId(3L);
             itemWarning.setStyle("warning");
             itemWarning.setLibelle("Pending");
             itemWarning.setCode("Pending");
@@ -147,19 +141,16 @@ public class AppApplication {
     }
     private void createDossierProjetExigenceEtat(){
             DossierProjetExigenceEtat itemSuccess = new DossierProjetExigenceEtat();
-            itemSuccess.setId(1L);
             itemSuccess.setStyle("success");
             itemSuccess.setLibelle("Validated");
             itemSuccess.setCode("Validated");
             dossierProjetExigenceEtatService.create(itemSuccess);
             DossierProjetExigenceEtat itemDanger = new DossierProjetExigenceEtat();
-            itemDanger.setId(2L);
             itemDanger.setStyle("danger");
             itemDanger.setLibelle("Rejected");
             itemDanger.setCode("Rejected");
             dossierProjetExigenceEtatService.create(itemDanger);
             DossierProjetExigenceEtat itemWarning = new DossierProjetExigenceEtat();
-            itemWarning.setId(3L);
             itemWarning.setStyle("warning");
             itemWarning.setLibelle("Pending");
             itemWarning.setCode("Pending");
