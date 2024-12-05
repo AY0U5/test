@@ -3,8 +3,8 @@ import jakarta.persistence.*;
 @Entity
 public class MinIOInfos {
     @Id
-    @SequenceGenerator(name = "minioinfos_seq", sequenceName = "minioinfos_seq", allocationSize = 1, initialValue = 10000)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "minioinfos_seq")
+    //@SequenceGenerator(name = "minioinfos_seq", sequenceName = "minioinfos_seq", allocationSize = 1, initialValue = 10000)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String bucketName;
     private String originalFileName;
