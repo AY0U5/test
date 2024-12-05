@@ -16,7 +16,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "dossier_projet_exigence")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-//@SequenceGenerator(name="dossier_projet_exigence_seq",sequenceName="dossier_projet_exigence_seq",allocationSize=1, initialValue = 1)
+@SequenceGenerator(name="dossier_projet_exigence_seq",sequenceName="dossier_projet_exigence_seq",allocationSize=1, initialValue = 1)
 public class DossierProjetExigence  extends BaseEntity     {
 
 
@@ -45,7 +45,7 @@ public class DossierProjetExigence  extends BaseEntity     {
 
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    @GeneratedValue(strategy =  GenerationType.SEQUENCE,generator = "dossier_projet_exigence_seq")
       @Override
     public Long getId(){
         return this.id;
